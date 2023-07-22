@@ -16,6 +16,15 @@
 		939589192A66226C005BB2B7 /* brain_gameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939589182A66226C005BB2B7 /* brain_gameTests.swift */; };
 		939589232A66226D005BB2B7 /* brain_gameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939589222A66226D005BB2B7 /* brain_gameUITests.swift */; };
 		939589252A66226D005BB2B7 /* brain_gameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939589242A66226D005BB2B7 /* brain_gameUITestsLaunchTests.swift */; };
+		939589392A6A12AE005BB2B7 /* note2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 939589322A6A12AD005BB2B7 /* note2.wav */; };
+		9395893A2A6A12AE005BB2B7 /* note4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 939589332A6A12AD005BB2B7 /* note4.wav */; };
+		9395893B2A6A12AE005BB2B7 /* note7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 939589342A6A12AD005BB2B7 /* note7.wav */; };
+		9395893C2A6A12AE005BB2B7 /* note3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 939589352A6A12AE005BB2B7 /* note3.wav */; };
+		9395893D2A6A12AE005BB2B7 /* note1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 939589362A6A12AE005BB2B7 /* note1.wav */; };
+		9395893E2A6A12AE005BB2B7 /* note5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 939589372A6A12AE005BB2B7 /* note5.wav */; };
+		9395893F2A6A12AE005BB2B7 /* note6.wav in Resources */ = {isa = PBXBuildFile; fileRef = 939589382A6A12AE005BB2B7 /* note6.wav */; };
+		939589422A6A20CF005BB2B7 /* win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 939589402A6A20CF005BB2B7 /* win.mp3 */; };
+		939589432A6A20CF005BB2B7 /* lose.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 939589412A6A20CF005BB2B7 /* lose.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +58,15 @@
 		9395891E2A66226D005BB2B7 /* brain_gameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = brain_gameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		939589222A66226D005BB2B7 /* brain_gameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brain_gameUITests.swift; sourceTree = "<group>"; };
 		939589242A66226D005BB2B7 /* brain_gameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brain_gameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		939589322A6A12AD005BB2B7 /* note2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note2.wav; sourceTree = "<group>"; };
+		939589332A6A12AD005BB2B7 /* note4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note4.wav; sourceTree = "<group>"; };
+		939589342A6A12AD005BB2B7 /* note7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note7.wav; sourceTree = "<group>"; };
+		939589352A6A12AE005BB2B7 /* note3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note3.wav; sourceTree = "<group>"; };
+		939589362A6A12AE005BB2B7 /* note1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note1.wav; sourceTree = "<group>"; };
+		939589372A6A12AE005BB2B7 /* note5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note5.wav; sourceTree = "<group>"; };
+		939589382A6A12AE005BB2B7 /* note6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note6.wav; sourceTree = "<group>"; };
+		939589402A6A20CF005BB2B7 /* win.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = win.mp3; sourceTree = "<group>"; };
+		939589412A6A20CF005BB2B7 /* lose.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lose.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +97,7 @@
 		939588F52A662265005BB2B7 = {
 			isa = PBXGroup;
 			children = (
+				939589312A6A1267005BB2B7 /* sounds */,
 				939589002A662265005BB2B7 /* brain_game */,
 				939589172A66226C005BB2B7 /* brain_gameTests */,
 				939589212A66226D005BB2B7 /* brain_gameUITests */,
@@ -125,6 +144,22 @@
 				939589242A66226D005BB2B7 /* brain_gameUITestsLaunchTests.swift */,
 			);
 			path = brain_gameUITests;
+			sourceTree = "<group>";
+		};
+		939589312A6A1267005BB2B7 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				939589412A6A20CF005BB2B7 /* lose.mp3 */,
+				939589402A6A20CF005BB2B7 /* win.mp3 */,
+				939589362A6A12AE005BB2B7 /* note1.wav */,
+				939589322A6A12AD005BB2B7 /* note2.wav */,
+				939589352A6A12AE005BB2B7 /* note3.wav */,
+				939589332A6A12AD005BB2B7 /* note4.wav */,
+				939589372A6A12AE005BB2B7 /* note5.wav */,
+				939589382A6A12AE005BB2B7 /* note6.wav */,
+				939589342A6A12AD005BB2B7 /* note7.wav */,
+			);
+			path = sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +266,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9395893E2A6A12AE005BB2B7 /* note5.wav in Resources */,
+				939589422A6A20CF005BB2B7 /* win.mp3 in Resources */,
+				9395893B2A6A12AE005BB2B7 /* note7.wav in Resources */,
 				9395890E2A66226C005BB2B7 /* LaunchScreen.storyboard in Resources */,
+				9395893F2A6A12AE005BB2B7 /* note6.wav in Resources */,
+				939589432A6A20CF005BB2B7 /* lose.mp3 in Resources */,
+				939589392A6A12AE005BB2B7 /* note2.wav in Resources */,
+				9395893A2A6A12AE005BB2B7 /* note4.wav in Resources */,
+				9395893D2A6A12AE005BB2B7 /* note1.wav in Resources */,
 				9395890B2A66226C005BB2B7 /* Assets.xcassets in Resources */,
+				9395893C2A6A12AE005BB2B7 /* note3.wav in Resources */,
 				939589092A662265005BB2B7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,6 +484,7 @@
 				DEVELOPMENT_TEAM = 8B6JNLZKLW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = brain_game/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Brains Eater";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -468,6 +513,7 @@
 				DEVELOPMENT_TEAM = 8B6JNLZKLW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = brain_game/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Brains Eater";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
