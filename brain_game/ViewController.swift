@@ -181,9 +181,9 @@ class ViewController: UIViewController {
 
     
     let topLeftColorKey = UIColor.red
-    let topRightColorKey = UIColor.yellow
+    let topRightColorKey = UIColor.blue
     let bottomLeftColorKey = UIColor.green
-    let bottomRightColorKey = UIColor.blue
+    let bottomRightColorKey = UIColor.yellow
     
     var justLeveledUp = false
     
@@ -291,6 +291,8 @@ func animateSolutionForTrainingMode(stepSolution: buttonNames){
                 /// call update on a delay, multiplied by 1 second per value of each step order
                 DispatchQueue.main.asyncAfter(deadline: .now() + Double(eachStepOrder)) {
                     self.playSound(sound: "note1")
+//                    self.playSoundMP3(sound: "guitar")
+
 
                     print("each step order =: \(eachStepOrder)")
                     self.animateSolutionForTrainingMode(stepSolution: buttonNames.topLeft)
@@ -304,6 +306,8 @@ func animateSolutionForTrainingMode(stepSolution: buttonNames){
 
                 DispatchQueue.main.asyncAfter(deadline: .now() + Double(eachStepOrder)) {
                     self.playSound(sound: "note2")
+//                    self.playSoundMP3(sound: "synth")
+
                     self.animateSolutionForTrainingMode(stepSolution:    buttonNames.topRight)
                     print("top right is step solution")
 
@@ -317,6 +321,8 @@ func animateSolutionForTrainingMode(stepSolution: buttonNames){
 
                 DispatchQueue.main.asyncAfter(deadline: .now() + Double(eachStepOrder)) {
                     self.playSound(sound: "note3")
+//                    self.playSoundMP3(sound: "drum")
+
 
                     print("bottom left is step solution")
                     
@@ -329,6 +335,8 @@ func animateSolutionForTrainingMode(stepSolution: buttonNames){
             } else {
                 DispatchQueue.main.asyncAfter(deadline: .now() + Double(eachStepOrder)) {
                     self.playSound(sound: "note4")
+//                    self.playSoundMP3(sound: "bass")
+
 
                     print("each step order =: \(eachStepOrder)")
                     print("bottom right is step solution")
@@ -373,6 +381,7 @@ func animateSolutionForTrainingMode(stepSolution: buttonNames){
                     
                     if(guess == buttonNames.topLeft){
                         playSound(sound: "note1")
+//                        playSoundMP3(sound: "guitar")
 
                         topLeftView.backgroundColor = UIColor.red
                         topRightView.backgroundColor = UIColor.white
@@ -384,6 +393,8 @@ func animateSolutionForTrainingMode(stepSolution: buttonNames){
                         
                     } else if (guess == buttonNames.topRight){
                         playSound(sound: "note2")
+//                        playSoundMP3(sound: "synth")
+
 
                         topLeftView.backgroundColor = UIColor.white
                         topRightView.backgroundColor = UIColor.yellow
@@ -393,6 +404,8 @@ func animateSolutionForTrainingMode(stepSolution: buttonNames){
 
                     } else if (guess == buttonNames.bottomLeft){
                         playSound(sound: "note3")
+//                        playSoundMP3(sound: "drum")
+
 
                         topLeftView.backgroundColor = UIColor.white
                         topRightView.backgroundColor = UIColor.white
@@ -402,6 +415,8 @@ func animateSolutionForTrainingMode(stepSolution: buttonNames){
 
                     } else {
                         playSound(sound: "note4")
+//                        playSoundMP3(sound: "bass")
+
 
                             topLeftView.backgroundColor = UIColor.white
                             topRightView.backgroundColor = UIColor.white

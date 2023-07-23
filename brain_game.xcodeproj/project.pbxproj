@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		935FACA82A6C7796009680A9 /* drum.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 935FACA42A6C7793009680A9 /* drum.mp3 */; };
+		935FACA92A6C7796009680A9 /* guitar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 935FACA52A6C7794009680A9 /* guitar.mp3 */; };
+		935FACAA2A6C7796009680A9 /* synth.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 935FACA62A6C7795009680A9 /* synth.mp3 */; };
+		935FACAB2A6C7796009680A9 /* bass.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 935FACA72A6C7795009680A9 /* bass.mp3 */; };
 		939589022A662265005BB2B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939589012A662265005BB2B7 /* AppDelegate.swift */; };
 		939589042A662265005BB2B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939589032A662265005BB2B7 /* SceneDelegate.swift */; };
 		939589062A662265005BB2B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939589052A662265005BB2B7 /* ViewController.swift */; };
@@ -45,6 +49,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		935FACA42A6C7793009680A9 /* drum.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = drum.mp3; sourceTree = "<group>"; };
+		935FACA52A6C7794009680A9 /* guitar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = guitar.mp3; sourceTree = "<group>"; };
+		935FACA62A6C7795009680A9 /* synth.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = synth.mp3; sourceTree = "<group>"; };
+		935FACA72A6C7795009680A9 /* bass.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bass.mp3; sourceTree = "<group>"; };
 		939588FE2A662265005BB2B7 /* brain_game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = brain_game.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		939589012A662265005BB2B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		939589032A662265005BB2B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +157,10 @@
 		939589312A6A1267005BB2B7 /* sounds */ = {
 			isa = PBXGroup;
 			children = (
+				935FACA72A6C7795009680A9 /* bass.mp3 */,
+				935FACA42A6C7793009680A9 /* drum.mp3 */,
+				935FACA52A6C7794009680A9 /* guitar.mp3 */,
+				935FACA62A6C7795009680A9 /* synth.mp3 */,
 				939589412A6A20CF005BB2B7 /* lose.mp3 */,
 				939589402A6A20CF005BB2B7 /* win.mp3 */,
 				939589362A6A12AE005BB2B7 /* note1.wav */,
@@ -267,8 +279,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9395893E2A6A12AE005BB2B7 /* note5.wav in Resources */,
+				935FACAA2A6C7796009680A9 /* synth.mp3 in Resources */,
 				939589422A6A20CF005BB2B7 /* win.mp3 in Resources */,
+				935FACA82A6C7796009680A9 /* drum.mp3 in Resources */,
 				9395893B2A6A12AE005BB2B7 /* note7.wav in Resources */,
+				935FACA92A6C7796009680A9 /* guitar.mp3 in Resources */,
 				9395890E2A66226C005BB2B7 /* LaunchScreen.storyboard in Resources */,
 				9395893F2A6A12AE005BB2B7 /* note6.wav in Resources */,
 				939589432A6A20CF005BB2B7 /* lose.mp3 in Resources */,
@@ -278,6 +293,7 @@
 				9395890B2A66226C005BB2B7 /* Assets.xcassets in Resources */,
 				9395893C2A6A12AE005BB2B7 /* note3.wav in Resources */,
 				939589092A662265005BB2B7 /* Main.storyboard in Resources */,
+				935FACAB2A6C7796009680A9 /* bass.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
