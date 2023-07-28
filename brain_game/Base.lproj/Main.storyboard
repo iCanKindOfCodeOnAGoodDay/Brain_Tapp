@@ -34,6 +34,51 @@
                                                             <action selector="topLeftButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sfc-r9-RoS"/>
                                                         </connections>
                                                     </button>
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="300" placeholderIntrinsicHeight="300" translatesAutoresizingMaskIntoConstraints="NO" id="mrI-QK-C2D">
+                                                        <rect key="frame" x="30" y="126" width="300" height="300"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="💀" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ka9-ne-1hc">
+                                                                <rect key="frame" x="0.0" y="0.0" width="300" height="305"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="250"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgF-W2-Poy">
+                                                                <rect key="frame" x="6" y="-7" width="288" height="319"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <attributedString key="attributedText">
+                                                                    <fragment content="🧟">
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="288" name=".AppleColorEmojiUI"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                </attributedString>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZq-Nx-CUR">
+                                                                <rect key="frame" x="0.0" y="0.0" width="300" height="305"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="start">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <buttonConfiguration key="configuration" style="plain">
+                                                                    <attributedString key="attributedTitle"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="startGameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U85-jV-U4p"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                                 <constraints>
@@ -125,81 +170,19 @@
                                     <constraint firstAttribute="trailing" secondItem="QAd-2k-OaK" secondAttribute="trailing" id="nmc-Io-C39"/>
                                 </constraints>
                             </stackView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7kZ-bj-Mq8" userLabel="logo">
-                                <rect key="frame" x="-29" y="50" width="356" height="350"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="brainsEater2" translatesAutoresizingMaskIntoConstraints="NO" id="HIp-b4-qYx">
-                                        <rect key="frame" x="20" y="20" width="316" height="300"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="100" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="mrI-QK-C2D">
-                                <rect key="frame" x="146.66666666666666" y="382.66666666666669" width="100" height="87"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💀" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ka9-ne-1hc">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="87"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="75"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgF-W2-Poy">
-                                        <rect key="frame" x="50" y="43.333333333333314" width="0.0" height="0.0"/>
-                                        <attributedString key="attributedText"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZq-Nx-CUR">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="87"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="start">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <buttonConfiguration key="configuration" style="plain"/>
-                                        <connections>
-                                            <action selector="startGameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U85-jV-U4p"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="ka9-ne-1hc" secondAttribute="bottom" id="5hS-bI-k31"/>
-                                    <constraint firstItem="ka9-ne-1hc" firstAttribute="top" secondItem="mrI-QK-C2D" secondAttribute="top" id="Gy6-8U-aGo"/>
-                                    <constraint firstItem="AZq-Nx-CUR" firstAttribute="leading" secondItem="mrI-QK-C2D" secondAttribute="leading" id="Itl-Jm-cLL"/>
-                                    <constraint firstItem="ka9-ne-1hc" firstAttribute="leading" secondItem="mrI-QK-C2D" secondAttribute="leading" id="PEh-hW-IJu"/>
-                                    <constraint firstAttribute="bottom" secondItem="AZq-Nx-CUR" secondAttribute="bottom" id="SKV-YZ-04e"/>
-                                    <constraint firstItem="ka9-ne-1hc" firstAttribute="centerY" secondItem="mrI-QK-C2D" secondAttribute="centerY" id="ZBP-2p-bGu"/>
-                                    <constraint firstItem="AZq-Nx-CUR" firstAttribute="centerY" secondItem="mrI-QK-C2D" secondAttribute="centerY" id="ZJg-mN-gSB"/>
-                                    <constraint firstItem="jgF-W2-Poy" firstAttribute="centerY" secondItem="mrI-QK-C2D" secondAttribute="centerY" id="cJl-pS-Rkf"/>
-                                    <constraint firstItem="ka9-ne-1hc" firstAttribute="centerX" secondItem="mrI-QK-C2D" secondAttribute="centerX" id="dsw-O3-uk8"/>
-                                    <constraint firstAttribute="trailing" secondItem="ka9-ne-1hc" secondAttribute="trailing" id="iXH-CT-OFP"/>
-                                    <constraint firstItem="AZq-Nx-CUR" firstAttribute="centerX" secondItem="mrI-QK-C2D" secondAttribute="centerX" id="jz9-tR-6Zn"/>
-                                    <constraint firstItem="jgF-W2-Poy" firstAttribute="centerX" secondItem="mrI-QK-C2D" secondAttribute="centerX" id="m62-X5-AAG"/>
-                                    <constraint firstItem="AZq-Nx-CUR" firstAttribute="top" secondItem="mrI-QK-C2D" secondAttribute="top" id="pMZ-Qp-NIt"/>
-                                    <constraint firstAttribute="trailing" secondItem="AZq-Nx-CUR" secondAttribute="trailing" id="qVj-zF-xfz"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="mrI-QK-C2D" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2Mi-ZR-URa"/>
                             <constraint firstAttribute="bottom" secondItem="vvV-Vi-3qN" secondAttribute="bottom" id="AN6-PV-cHK"/>
                             <constraint firstAttribute="trailing" secondItem="vvV-Vi-3qN" secondAttribute="trailing" constant="1" id="FEI-xr-6Xc"/>
                             <constraint firstItem="vvV-Vi-3qN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="r4d-gc-BBO"/>
-                            <constraint firstItem="mrI-QK-C2D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rNu-MK-5Dr"/>
                             <constraint firstItem="vvV-Vi-3qN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wsd-yn-ydj"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="bottomLeftView" destination="zQD-C8-XcR" id="7FG-MP-Tx4"/>
                         <outlet property="bottomRightView" destination="xaE-gm-kFh" id="4SA-uu-1CA"/>
-                        <outlet property="brainsEaterLogo" destination="HIp-b4-qYx" id="Vr4-V3-G4l"/>
                         <outlet property="gamePlayMessagesBox" destination="mrI-QK-C2D" id="QCj-YA-w6s"/>
                         <outlet property="gamePlayMessagesLabel" destination="ka9-ne-1hc" id="bu1-U0-ymQ"/>
                         <outlet property="topLeftView" destination="bbF-jP-g3T" id="7MD-82-MSK"/>
@@ -228,7 +211,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="brainsEater2" width="300" height="300"/>
         <image name="person.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

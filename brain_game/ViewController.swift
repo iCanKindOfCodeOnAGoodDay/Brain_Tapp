@@ -20,11 +20,12 @@ class ViewController: UIViewController {
         playSoundMP3(sound: "lose")
   
         // Do any additional setup after loading the view.
-        topLeftView.backgroundColor = UIColor.black
-        topRightView.backgroundColor = UIColor.black
-        bottomLeftView.backgroundColor = UIColor.black
-        bottomRightView.backgroundColor = UIColor.black
-        gamePlayMessagesBox.backgroundColor = UIColor.gray
+//        topLeftView.backgroundColor = UIColor.white
+//        topRightView.backgroundColor = UIColor.white
+//        bottomLeftView.backgroundColor = UIColor.black
+//        bottomRightView.backgroundColor = UIColor.black
+        setFourViewsToWhite()
+        gamePlayMessagesBox.backgroundColor = UIColor.green
         winLabel.text = ""
         
     }
@@ -44,7 +45,6 @@ class ViewController: UIViewController {
     }
     
     
-    @IBOutlet weak var brainsEaterLogo: UIImageView!
     
     @IBOutlet weak var gamePlayMessagesBox: UIView!
     // so that we can update the button color or the color of the game messaging while the app is training the user on each pattern and to make game play more intiutive
@@ -73,7 +73,7 @@ class ViewController: UIViewController {
     
     
     func gameOver(){
-        brainsEaterLogo.alpha = 1.0
+
         playSoundMP3(sound: "lose")
         solutionsList = []
         generateNewStartingPattern()
@@ -200,14 +200,12 @@ class ViewController: UIViewController {
                     
                       playSoundMP3(sound: "win")
                     self.gamePlayMessagesLabel.text = ""
-                    self.brainsEaterLogo.alpha = 1.0
-                    self.setFourViewsToBlack()
+                    self.setFourViewsToWhite()
 
-                    self.winLabel.text = ""
-                    self.gamePlayMessagesBox.backgroundColor = UIColor.black
+                    self.winLabel.text = "😎"
+                    self.gamePlayMessagesBox.backgroundColor = UIColor.white
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-                        self.gamePlayMessagesBox.backgroundColor = UIColor.black
-                        self.brainsEaterLogo.alpha = 0.0
+                        self.gamePlayMessagesBox.backgroundColor = UIColor.white
 
           
                     
@@ -225,9 +223,10 @@ class ViewController: UIViewController {
     
 
 func animateSolutionForTrainingMode(stepSolution: buttonNames){
-    gamePlayMessagesBox.backgroundColor = UIColor.black
+    gamePlayMessagesBox.backgroundColor = UIColor.white
 
     if(stepSolution == buttonNames.topLeft){
+        gamePlayMessagesBox.backgroundColor = topLeftColorKey
    
         topLeftView.backgroundColor = topLeftColorKey
         topRightView.backgroundColor = UIColor.white
@@ -235,6 +234,7 @@ func animateSolutionForTrainingMode(stepSolution: buttonNames){
         bottomRightView.backgroundColor = UIColor.white
     }
  else   if(stepSolution == buttonNames.topRight){
+     gamePlayMessagesBox.backgroundColor = topRightColorKey
 
      topRightView.backgroundColor  = topRightColorKey
         topLeftView.backgroundColor = UIColor.white
@@ -242,6 +242,8 @@ func animateSolutionForTrainingMode(stepSolution: buttonNames){
         bottomRightView.backgroundColor = UIColor.white
     }
  else   if(stepSolution == buttonNames.bottomLeft){
+     gamePlayMessagesBox.backgroundColor = bottomLeftColorKey
+
 
      bottomLeftView.backgroundColor   = bottomLeftColorKey
         topLeftView.backgroundColor = UIColor.white
@@ -249,6 +251,8 @@ func animateSolutionForTrainingMode(stepSolution: buttonNames){
         bottomRightView.backgroundColor = UIColor.white
     }
     else if (stepSolution == buttonNames.bottomRight){
+        gamePlayMessagesBox.backgroundColor = bottomRightColorKey
+
   
         bottomRightView.backgroundColor = bottomRightColorKey
         topLeftView.backgroundColor = UIColor.white
@@ -282,12 +286,13 @@ func animateSolutionForTrainingMode(stepSolution: buttonNames){
         var eachStepOrder = 0
         var counter = 0
         trainingMode = true
-        brainsEaterLogo.alpha = 0.0
         print("training mode should be on let us check training mode =\(trainingMode)")
         
         for pattern in solutionsList {
             
             if(solutionsList[eachStepOrder] == buttonNames.topLeft){
+                gamePlayMessagesBox.backgroundColor = topLeftColorKey
+
                 /// call update on a delay, multiplied by 1 second per value of each step order
                 DispatchQueue.main.asyncAfter(deadline: .now() + Double(eachStepOrder)) {
                     self.playSound(sound: "note1")
@@ -302,9 +307,12 @@ func animateSolutionForTrainingMode(stepSolution: buttonNames){
                     
                 }
             } else if (solutionsList[eachStepOrder] == buttonNames.topRight){
+              
+
                 print("each step order =: \(eachStepOrder)")
 
                 DispatchQueue.main.asyncAfter(deadline: .now() + Double(eachStepOrder)) {
+                    self.gamePlayMessagesBox.backgroundColor = self.topRightColorKey
                     self.playSound(sound: "note2")
 //                    self.playSoundMP3(sound: "synth")
 
@@ -317,9 +325,12 @@ func animateSolutionForTrainingMode(stepSolution: buttonNames){
 
                 }
             } else if (solutionsList[eachStepOrder] == buttonNames.bottomLeft){
+            
+
                 print("each step order =: \(eachStepOrder)")
 
                 DispatchQueue.main.asyncAfter(deadline: .now() + Double(eachStepOrder)) {
+                    self.gamePlayMessagesBox.backgroundColor = self.bottomLeftColorKey
                     self.playSound(sound: "note3")
 //                    self.playSoundMP3(sound: "drum")
 
@@ -334,6 +345,8 @@ func animateSolutionForTrainingMode(stepSolution: buttonNames){
                 }
             } else {
                 DispatchQueue.main.asyncAfter(deadline: .now() + Double(eachStepOrder)) {
+                    self.gamePlayMessagesBox.backgroundColor = self.bottomRightColorKey
+
                     self.playSound(sound: "note4")
 //                    self.playSoundMP3(sound: "bass")
 
@@ -380,10 +393,11 @@ func animateSolutionForTrainingMode(stepSolution: buttonNames){
                     print("user got the answer right at index\(guessIndex )")
                     
                     if(guess == buttonNames.topLeft){
+                        gamePlayMessagesBox.backgroundColor = topLeftColorKey
                         playSound(sound: "note1")
 //                        playSoundMP3(sound: "guitar")
 
-                        topLeftView.backgroundColor = UIColor.red
+                        topLeftView.backgroundColor = topLeftColorKey
                         topRightView.backgroundColor = UIColor.white
                         bottomLeftView.backgroundColor = UIColor.white
                         bottomRightView.backgroundColor = UIColor.white
@@ -392,28 +406,31 @@ func animateSolutionForTrainingMode(stepSolution: buttonNames){
                         
                         
                     } else if (guess == buttonNames.topRight){
+                        gamePlayMessagesBox.backgroundColor = topRightColorKey
                         playSound(sound: "note2")
 //                        playSoundMP3(sound: "synth")
 
 
                         topLeftView.backgroundColor = UIColor.white
-                        topRightView.backgroundColor = UIColor.yellow
+                        topRightView.backgroundColor = topRightColorKey
                         bottomLeftView.backgroundColor = UIColor.white
                         bottomRightView.backgroundColor = UIColor.white
                         checkIfTheUserJustLeveledUp(submittedAnswer: guess)
 
                     } else if (guess == buttonNames.bottomLeft){
+                        gamePlayMessagesBox.backgroundColor = bottomLeftColorKey
                         playSound(sound: "note3")
 //                        playSoundMP3(sound: "drum")
 
 
                         topLeftView.backgroundColor = UIColor.white
                         topRightView.backgroundColor = UIColor.white
-                        bottomLeftView.backgroundColor = UIColor.green
+                        bottomLeftView.backgroundColor = bottomLeftColorKey
                         bottomRightView.backgroundColor = UIColor.white
                         checkIfTheUserJustLeveledUp(submittedAnswer: guess)
 
                     } else {
+                        gamePlayMessagesBox.backgroundColor = bottomRightColorKey
                         playSound(sound: "note4")
 //                        playSoundMP3(sound: "bass")
 
@@ -421,7 +438,7 @@ func animateSolutionForTrainingMode(stepSolution: buttonNames){
                             topLeftView.backgroundColor = UIColor.white
                             topRightView.backgroundColor = UIColor.white
                             bottomLeftView.backgroundColor = UIColor.white
-                            bottomRightView.backgroundColor = UIColor.blue
+                            bottomRightView.backgroundColor = bottomRightColorKey
                         checkIfTheUserJustLeveledUp(submittedAnswer: guess)
 
                         }
