@@ -149,9 +149,27 @@
                                                             <action selector="bottomRightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z9i-We-Xzt"/>
                                                         </connections>
                                                     </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcM-JD-EgN">
+                                                        <rect key="frame" x="73" y="364.33333333333337" width="103" height="41.666666666666686"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="themes">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="24" name="Helvetica"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="themeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RoE-XT-AOO"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="lcM-JD-EgN" secondAttribute="bottom" constant="20" id="Acu-4d-qzj"/>
+                                                    <constraint firstAttribute="trailing" secondItem="lcM-JD-EgN" secondAttribute="trailing" constant="20" id="QFl-TM-lZr"/>
                                                     <constraint firstAttribute="bottom" secondItem="COc-Yl-VDt" secondAttribute="bottom" id="QtE-vn-Vvg"/>
                                                     <constraint firstAttribute="trailing" secondItem="COc-Yl-VDt" secondAttribute="trailing" id="Xat-bh-li3"/>
                                                     <constraint firstItem="COc-Yl-VDt" firstAttribute="leading" secondItem="xaE-gm-kFh" secondAttribute="leading" id="qwQ-xX-gVd"/>

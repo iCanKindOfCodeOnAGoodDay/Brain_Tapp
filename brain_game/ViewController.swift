@@ -133,6 +133,60 @@ class ViewController: UIViewController {
         modeCheckerForDebugging()
     }
     
+    
+    @IBAction func themeButton(_ sender: Any) {
+        changeTheme()
+        showAnimationForNewlySelectedTheme()
+//        whileLoopPractice()
+        
+    }
+    
+    func whileLoopPractice(){
+        var x = 0
+        while(x < 5){
+            print("x = \(x)")
+            x += 1
+
+        }
+    }
+    
+    func showAnimationForNewlySelectedTheme(){
+    
+        DispatchQueue.main.asyncAfter(deadline: .now() + Double(0)) {
+            
+            self.setFourViewsToBlack()
+            self.topLeftView.backgroundColor = self.topLeftColorKey
+            self.playSound(sound: "note1")
+        }
+
+                DispatchQueue.main.asyncAfter(deadline: .now() + Double(1)) {
+                    self.setFourViewsToBlack()
+                    self.topRightView.backgroundColor = self.topRightColorKey
+                    self.playSound(sound: "note2")
+
+                }
+                DispatchQueue.main.asyncAfter(deadline: .now() + Double(2)) {                    self.setFourViewsToBlack()
+                    self.bottomLeftView.backgroundColor =  self.bottomLeftColorKey
+                    self.playSound(sound: "note3")
+
+                }
+                DispatchQueue.main.asyncAfter(deadline: .now() + Double(3)) {                    self.setFourViewsToBlack()
+                    self.bottomRightView.backgroundColor = self.bottomRightColorKey
+                    self.playSound(sound: "note4")
+
+                }
+                DispatchQueue.main.asyncAfter(deadline: .now() + Double(4)) {
+                    self.setFourViewsToBlack()
+
+                }
+                
+        
+            }
+     
+        
+    
+    
+    
     func modeCheckerForDebugging(){
         print("training mode = \(trainingMode)")
         print("justWon = \(justLeveledUp)")
