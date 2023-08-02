@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="300" placeholderIntrinsicHeight="300" image="IMG_0390" translatesAutoresizingMaskIntoConstraints="NO" id="S6F-eE-bdk">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="300" placeholderIntrinsicHeight="300" image="BRAIN TAPP" translatesAutoresizingMaskIntoConstraints="NO" id="S6F-eE-bdk">
                                 <rect key="frame" x="46.666666666666657" y="276" width="300" height="300"/>
                             </imageView>
                         </subviews>
@@ -34,6 +34,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="IMG_0390" width="300" height="300"/>
+        <image name="BRAIN TAPP" width="333" height="280"/>
     </resources>
 </document>

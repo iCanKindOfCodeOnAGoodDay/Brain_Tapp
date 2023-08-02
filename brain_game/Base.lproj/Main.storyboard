@@ -16,6 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BRAIN TAPP" translatesAutoresizingMaskIntoConstraints="NO" id="E4V-fj-2K1">
+                                <rect key="frame" x="4" y="287" width="384" height="277"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="394" placeholderIntrinsicHeight="854" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="vvV-Vi-3qN">
                                 <rect key="frame" x="0.0" y="0.0" width="392" height="852"/>
                                 <subviews>
@@ -35,25 +39,25 @@
                                                         </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="300" placeholderIntrinsicHeight="300" translatesAutoresizingMaskIntoConstraints="NO" id="mrI-QK-C2D">
-                                                        <rect key="frame" x="30" y="30" width="300" height="300"/>
+                                                        <rect key="frame" x="30" y="60" width="136" height="250"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="💀" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ka9-ne-1hc">
-                                                                <rect key="frame" x="-57" y="30.666666666666657" width="250" height="305"/>
+                                                                <rect key="frame" x="-18" y="30.666666666666629" width="175" height="214"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="250"/>
+                                                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="175"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="300" placeholderIntrinsicHeight="300" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgF-W2-Poy">
-                                                                <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                                                <rect key="frame" x="-18" y="30" width="175" height="214"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <attributedString key="attributedText">
-                                                                    <fragment content="🧟">
+                                                                    <fragment content="x">
                                                                         <attributes>
-                                                                            <font key="NSFont" size="288" name=".AppleColorEmojiUI"/>
-                                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            <font key="NSFont" size="200" name="Impact"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                         </attributes>
                                                                     </fragment>
                                                                 </attributedString>
@@ -80,7 +84,7 @@
                                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </view>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="W0c-eE-cla" firstAttribute="leading" secondItem="bbF-jP-g3T" secondAttribute="leading" id="C8j-7a-irO"/>
                                                     <constraint firstAttribute="trailing" secondItem="W0c-eE-cla" secondAttribute="trailing" id="Ojc-cr-AVh"/>
@@ -101,7 +105,7 @@
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="ZEr-M1-AOA" firstAttribute="top" secondItem="405-8A-u5C" secondAttribute="top" id="Nr7-NV-3aG"/>
                                                     <constraint firstItem="ZEr-M1-AOA" firstAttribute="leading" secondItem="405-8A-u5C" secondAttribute="leading" id="OeH-na-mUc"/>
@@ -128,7 +132,7 @@
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="pAh-So-rAy" secondAttribute="trailing" id="1US-W6-kqo"/>
                                                     <constraint firstItem="pAh-So-rAy" firstAttribute="top" secondItem="zQD-C8-XcR" secondAttribute="top" id="DpA-mI-5Im"/>
@@ -149,24 +153,27 @@
                                                             <action selector="bottomRightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z9i-We-Xzt"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcM-JD-EgN">
-                                                        <rect key="frame" x="73" y="364.33333333333337" width="103" height="41.666666666666686"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lcM-JD-EgN">
+                                                        <rect key="frame" x="87" y="364.66666666666663" width="89" height="41.333333333333314"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Button">
                                                             <attributedString key="attributedTitle">
-                                                                <fragment content="themes">
+                                                                <fragment content=" CUSTOM ">
                                                                     <attributes>
-                                                                        <font key="NSFont" size="24" name="Helvetica"/>
+                                                                        <font key="NSFont" size="24" name="Impact"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
                                                             </attributedString>
-                                                        </buttonConfiguration>
+                                                        </state>
                                                         <connections>
                                                             <action selector="themeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RoE-XT-AOO"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="lcM-JD-EgN" secondAttribute="bottom" constant="20" id="Acu-4d-qzj"/>
                                                     <constraint firstAttribute="trailing" secondItem="lcM-JD-EgN" secondAttribute="trailing" constant="20" id="QFl-TM-lZr"/>
@@ -190,7 +197,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="vvV-Vi-3qN" secondAttribute="bottom" id="AN6-PV-cHK"/>
                             <constraint firstAttribute="trailing" secondItem="vvV-Vi-3qN" secondAttribute="trailing" constant="1" id="FEI-xr-6Xc"/>
@@ -210,7 +217,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-150" y="-418"/>
+            <point key="canvasLocation" x="-150.38167938931298" y="-418.3098591549296"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="DHU-vD-meP">
@@ -229,12 +236,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BRAIN TAPP" width="333.33334350585938" height="280"/>
         <image name="person.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -500,7 +500,7 @@
 				DEVELOPMENT_TEAM = 8B6JNLZKLW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = brain_game/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Brains Eater";
+				INFOPLIST_KEY_CFBundleDisplayName = "Brain Tapp";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -529,7 +529,7 @@
 				DEVELOPMENT_TEAM = 8B6JNLZKLW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = brain_game/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Brains Eater";
+				INFOPLIST_KEY_CFBundleDisplayName = "Brain Tapp";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

@@ -106,39 +106,56 @@ class ViewController: UIViewController {
     
     
     @IBAction func topLeftButton(_ sender: Any) {
-        checkGuess(guess: buttonNames.topLeft)
-        print("top left pressed")
-        modeCheckerForDebugging()
-
+        if(isShowingNewThemePreview == false){
+            
+            
+            checkGuess(guess: buttonNames.topLeft)
+            print("top left pressed")
+            modeCheckerForDebugging()
+        }
     }
     
     @IBAction func topRightButton(_ sender: Any) {
-        checkGuess(guess: buttonNames.topRight)
-        print("top right tapped")
-        modeCheckerForDebugging()
-
+        if(isShowingNewThemePreview == false){
+            
+            
+            checkGuess(guess: buttonNames.topRight)
+            print("top right tapped")
+            modeCheckerForDebugging()
+            
+        }
     }
     
     @IBAction func bottomLeftButton(_ sender: Any) {
+        if(isShowingNewThemePreview == false){
+            
+            
             checkGuess(guess: buttonNames.bottomLeft)
-        print("bottom left tapped")
-        modeCheckerForDebugging()
-
+            print("bottom left tapped")
+            modeCheckerForDebugging()
+            
+        }
     }
     
     
     @IBAction func bottomRightButton(_ sender: Any) {
+        if(isShowingNewThemePreview == false){
+            
             checkGuess(guess: buttonNames.bottomRight)
-        print ("bottom right tapped")
-        modeCheckerForDebugging()
+            print ("bottom right tapped")
+            modeCheckerForDebugging()
+        }
     }
     
     
     @IBAction func themeButton(_ sender: Any) {
-        changeTheme()
-        showAnimationForNewlySelectedTheme()
-//        whileLoopPractice()
-        
+        if(trainingMode == false){
+            
+            
+            changeTheme()
+            showAnimationForNewlySelectedTheme()
+            //        whileLoopPractice()
+        }
     }
     
     func whileLoopPractice(){
@@ -150,38 +167,43 @@ class ViewController: UIViewController {
         }
     }
     
-    func showAnimationForNewlySelectedTheme(){
+    var isShowingNewThemePreview = false
     
+    
+    func showAnimationForNewlySelectedTheme(){
+        isShowingNewThemePreview = true
+        if(trainingMode == false){
         DispatchQueue.main.asyncAfter(deadline: .now() + Double(0)) {
             
-            self.setFourViewsToBlack()
             self.topLeftView.backgroundColor = self.topLeftColorKey
             self.playSound(sound: "note1")
         }
 
-                DispatchQueue.main.asyncAfter(deadline: .now() + Double(1)) {
-                    self.setFourViewsToBlack()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    
                     self.topRightView.backgroundColor = self.topRightColorKey
                     self.playSound(sound: "note2")
 
                 }
-                DispatchQueue.main.asyncAfter(deadline: .now() + Double(2)) {                    self.setFourViewsToBlack()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                     self.bottomLeftView.backgroundColor =  self.bottomLeftColorKey
                     self.playSound(sound: "note3")
 
                 }
-                DispatchQueue.main.asyncAfter(deadline: .now() + Double(3)) {                    self.setFourViewsToBlack()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                     self.bottomRightView.backgroundColor = self.bottomRightColorKey
                     self.playSound(sound: "note4")
 
                 }
-                DispatchQueue.main.asyncAfter(deadline: .now() + Double(4)) {
-                    self.setFourViewsToBlack()
-
-                }
+//                DispatchQueue.main.asyncAfter(deadline: .now() + Double(2)) {
+//
+//                    self.isShowingNewThemePreview = false
+//
+//                }
                 
         
             }
+    }
      
         
     
@@ -264,6 +286,7 @@ class ViewController: UIViewController {
         topRightColorKey = colorPallets[indexForIteratingTheColorPallets][1]
         bottomLeftColorKey = colorPallets[indexForIteratingTheColorPallets][2]
         bottomRightColorKey = colorPallets[indexForIteratingTheColorPallets][3]
+        gamePlayMessagesBox.backgroundColor = topLeftColorKey
     }
     
     
@@ -316,7 +339,7 @@ class ViewController: UIViewController {
     ]
     
     let colorGroup5 = [
-        #colorLiteral(red: 0.8666666667, green: 0.8666666667, blue: 0.8666666667, alpha: 1),  #colorLiteral(red: 0.9764705882, green: 0.9529411765, blue: 0.9529411765, alpha: 1),  #colorLiteral(red: 0.968627451, green: 0.8509803922, blue: 0.8509803922, alpha: 1),  #colorLiteral(red: 0.9490196078, green: 0.3215686275, blue: 0.5294117647, alpha: 1),
+        #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),  #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1),  #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1),  #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),
     ]
     
     let colorGroup6 = [
@@ -332,19 +355,19 @@ class ViewController: UIViewController {
     ]
     
     let colorGroup9 = [
-        #colorLiteral(red: 0.6039215686, green: 0.1254901961, blue: 0.5490196078, alpha: 1),  #colorLiteral(red: 0.8823529412, green: 0.07058823529, blue: 0.6, alpha: 1),  #colorLiteral(red: 1, green: 0.9176470588, blue: 0.9176470588, alpha: 1),  #colorLiteral(red: 0.9607843137, green: 0.7764705882, blue: 0.9254901961, alpha: 1),
+        #colorLiteral(red: 0.6039215686, green: 0.1254901961, blue: 0.5490196078, alpha: 1),  #colorLiteral(red: 0.8823529412, green: 0.07058823529, blue: 0.6, alpha: 1),  #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),  #colorLiteral(red: 0.9607843137, green: 0.7764705882, blue: 0.9254901961, alpha: 1),
     ]
     
     let colorGroup10 = [
-        #colorLiteral(red: 0.6, green: 0.08235294118, blue: 0.3058823529, alpha: 1),  #colorLiteral(red: 1, green: 0.7882352941, blue: 0.2352941176, alpha: 1),  #colorLiteral(red: 1, green: 0.8666666667, blue: 0.8, alpha: 1),  #colorLiteral(red: 1, green: 0.7333333333, blue: 0.8, alpha: 1),
+        #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1),  #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),  #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),  #colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1),
     ]
     
     let colorGroup11 = [
-        #colorLiteral(red: 1, green: 0.7882352941, blue: 0.5882352941, alpha: 1),  #colorLiteral(red: 1, green: 0.5176470588, blue: 0.4549019608, alpha: 1),  #colorLiteral(red: 0.6235294118, green: 0.3725490196, blue: 0.5019607843, alpha: 1),  #colorLiteral(red: 0.3450980392, green: 0.2392156863, blue: 0.4470588235, alpha: 1),
+        #colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1),  #colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1),  #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1),  #colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1),
     ]
     
     let colorGroup12 = [
-        #colorLiteral(red: 0.1294117647, green: 0.1411764706, blue: 0.2392156863, alpha: 1),  #colorLiteral(red: 1, green: 0.4862745098, blue: 0.4862745098, alpha: 1),  #colorLiteral(red: 1, green: 0.8156862745, blue: 0.5098039216, alpha: 1),  #colorLiteral(red: 0.5333333333, green: 0.8823529412, blue: 0.9490196078, alpha: 1),
+        #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),  #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1),  #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1),  #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),
     ]
     
     
@@ -357,7 +380,7 @@ class ViewController: UIViewController {
     ]
     
     let colorGroup15 = [
-        #colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1),  #colorLiteral(red: 0.231372549, green: 0.03529411765, blue: 0.2666666667, alpha: 1),  #colorLiteral(red: 0.3725490196, green: 0.09411764706, blue: 0.3294117647, alpha: 1),  #colorLiteral(red: 0.1019607843, green: 0.7333333333, blue: 0.6117647059, alpha: 1),
+        #colorLiteral(red: 0.1019607843, green: 0.7333333333, blue: 0.6117647059, alpha: 1),  #colorLiteral(red: 0.231372549, green: 0.03529411765, blue: 0.2666666667, alpha: 1),  #colorLiteral(red: 0.3725490196, green: 0.09411764706, blue: 0.3294117647, alpha: 1),  #colorLiteral(red: 0.1019607843, green: 0.7333333333, blue: 0.6117647059, alpha: 1),
     ]
     
     let colorGroup16 = [
@@ -365,25 +388,33 @@ class ViewController: UIViewController {
     ]
     
     let colorGroup17 = [
-        #colorLiteral(red: 0.968627451, green: 0.968627451, blue: 0.968627451, alpha: 1),  #colorLiteral(red: 0.8, green: 0.9176470588, blue: 0.7333333333, alpha: 1),  #colorLiteral(red: 0.2470588235, green: 0.2470588235, blue: 0.2666666667, alpha: 1),  #colorLiteral(red: 0.9921568627, green: 0.7960784314, blue: 0.6196078431, alpha: 1),
+        #colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1),  #colorLiteral(red: 0.2470588235, green: 0.2470588235, blue: 0.2666666667, alpha: 1),  #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), #colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1),
     ]
     
     let colorGroup18 = [
-        #colorLiteral(red: 0.9843137255, green: 0.9254901961, blue: 0.9254901961, alpha: 1),  #colorLiteral(red: 0.568627451, green: 0.8196078431, blue: 0.5450980392, alpha: 1),  #colorLiteral(red: 0.8823529412, green: 0.1137254902, blue: 0.4549019608, alpha: 1),  #colorLiteral(red: 0.2666666667, green: 0, blue: 0.2784313725, alpha: 1),
+        #colorLiteral(red: 0.8823529412, green: 0.1137254902, blue: 0.4549019608, alpha: 1),  #colorLiteral(red: 0.568627451, green: 0.8196078431, blue: 0.5450980392, alpha: 1),  #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),  #colorLiteral(red: 0.2666666667, green: 0, blue: 0.2784313725, alpha: 1),
     ]
     
     let colorGroup19 = [
-        #colorLiteral(red: 1, green: 0.6039215686, blue: 0.462745098, alpha: 1),  #colorLiteral(red: 1, green: 0.9176470588, blue: 0.8588235294, alpha: 1),  #colorLiteral(red: 0.4039215686, green: 0.6078431373, blue: 0.6078431373, alpha: 1),  #colorLiteral(red: 0.3882352941, green: 0.4509803922, blue: 0.4509803922, alpha: 1),
+        #colorLiteral(red: 1, green: 0.6039215686, blue: 0.462745098, alpha: 1),  #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),  #colorLiteral(red: 0.4039215686, green: 0.6078431373, blue: 0.6078431373, alpha: 1),  #colorLiteral(red: 0.3882352941, green: 0.4509803922, blue: 0.4509803922, alpha: 1),
     ]
     
     let colorGroup20 = [
-        #colorLiteral(red: 0.6352941176, green: 0.8235294118, blue: 1, alpha: 1),  #colorLiteral(red: 0.9960784314, green: 0.9764705882, blue: 0.937254902, alpha: 1),  #colorLiteral(red: 1, green: 0.5254901961, blue: 0.368627451, alpha: 1),  #colorLiteral(red: 0.9960784314, green: 0.8941176471, blue: 0.2509803922, alpha: 1),
+        #colorLiteral(red: 0.6352941176, green: 0.8235294118, blue: 1, alpha: 1),  #colorLiteral(red: 0.9960784314, green: 0.8941176471, blue: 0.2509803922, alpha: 1), #colorLiteral(red: 0.9960784314, green: 0.8941176471, blue: 0.2509803922, alpha: 1),  #colorLiteral(red: 1, green: 0.5254901961, blue: 0.368627451, alpha: 1),
     ]
     
     let colorGroup21 = [
-        #colorLiteral(red: 1, green: 0, blue: 0.4588235294, alpha: 1),  #colorLiteral(red: 0.09019607843, green: 0.1529411765, blue: 0.4549019608, alpha: 1),  #colorLiteral(red: 0.4666666667, green: 0.8509803922, blue: 0.4392156863, alpha: 1),  #colorLiteral(red: 0.9333333333, green: 0.9333333333, blue: 0.9333333333, alpha: 1),
+        #colorLiteral(red: 1, green: 0, blue: 0.4588235294, alpha: 1),  #colorLiteral(red: 0.09019607843, green: 0.1529411765, blue: 0.4549019608, alpha: 1),  #colorLiteral(red: 0.4666666667, green: 0.8509803922, blue: 0.4392156863, alpha: 1),  #colorLiteral(red: 0.9960784314, green: 0.8941176471, blue: 0.2509803922, alpha: 1),
     ]
     
+    
+    func setViewsClear(){
+        topLeftView.backgroundColor = UIColor.clear
+        topRightView.backgroundColor = UIColor.clear
+        bottomLeftView.backgroundColor = UIColor.clear
+        bottomRightView.backgroundColor = UIColor.clear
+
+    }
     
     
     var justLeveledUp = false
@@ -396,15 +427,19 @@ class ViewController: UIViewController {
                     justLeveledUp = true
                                     growPattern()
                     setFourViewsToWhite()
+                    setViewsClear()
                     
                     print("just leveled up = \(justLeveledUp)")
                     
                       playSoundMP3(sound: "win")
                     self.gamePlayMessagesLabel.text = ""
                     self.setFourViewsToWhite()
+                    setViewsClear()
 
-                    self.winLabel.text = "🎉"
-                    self.gamePlayMessagesBox.backgroundColor = UIColor.white
+                    self.winLabel.textColor = UIColor.white
+                    self.gamePlayMessagesBox.backgroundColor = UIColor.black
+                    self.winLabel.text = "\(solutionsList.count - 1)"
+                  
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
                         self.gamePlayMessagesBox.backgroundColor = UIColor.white
 
@@ -482,10 +517,15 @@ func animateSolutionForTrainingMode(stepSolution: buttonNames){
 
     // the loop below should be replaced with a more "readable" loop for this particular use case
     
+    
+    // implement a check to prevent training mode during theme preview mode
     func trainUser(){
         winLabel.text = ""
         var eachStepOrder = 0
         var counter = 0
+        isShowingNewThemePreview = false
+            
+      
         trainingMode = true
         print("training mode should be on let us check training mode =\(trainingMode)")
         
@@ -575,7 +615,7 @@ func animateSolutionForTrainingMode(stepSolution: buttonNames){
             self.gamePlayMessagesLabel.text = "💀"
             
         }
-        
+    
     }
     
   
