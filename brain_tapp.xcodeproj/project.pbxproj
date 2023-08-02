@@ -253,7 +253,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 939588F92A662265005BB2B7 /* Build configuration list for PBXProject "brain_game" */;
+			buildConfigurationList = 939588F92A662265005BB2B7 /* Build configuration list for PBXProject "brain_tapp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -627,7 +627,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		939588F92A662265005BB2B7 /* Build configuration list for PBXProject "brain_game" */ = {
+		939588F92A662265005BB2B7 /* Build configuration list for PBXProject "brain_tapp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				939589262A66226D005BB2B7 /* Debug */,
