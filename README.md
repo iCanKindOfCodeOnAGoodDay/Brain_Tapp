@@ -1,1 +1,1 @@
-This is an open sourced Swift app published to the Apple App store by Scott Quashen.
+Published Apple App store 2021-23.
